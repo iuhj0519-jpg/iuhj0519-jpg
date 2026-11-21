@@ -1,6 +1,6 @@
-# Eojin Lee (Eddie)
+# Eojin Lee (이어진)
 
-반도체 소자·공정 이해를 바탕으로 RTL을 설계하고, AI Agent로 설계 검증을 자동화하는 고려대학교 전기전자공학부 학부생입니다.
+반도체 소자 및 공정 이해를 바탕으로 RTL을 설계하고, AI Agent로 설계 검증을 자동화하는 프로젝트를 주로 진행하는 고려대학교 전기전자공학부 학부생입니다.
 
 [![Email](https://img.shields.io/badge/Email-iuhj0519%40gmail.com-blue)](mailto:iuhj0519@gmail.com)
 [![Blog](https://img.shields.io/badge/Blog-Naver-03C75A)](https://blog.naver.com/iuhj0519)
