@@ -5,7 +5,7 @@
 [![Email](https://img.shields.io/badge/Email-iuhj0519%40gmail.com-blue)](mailto:iuhj0519@gmail.com)
 [![Naver](https://img.shields.io/badge/Email-iuhj0519%40naver.com-03C75A)](mailto:iuhj0519@naver.com)
 [![Korea University](https://img.shields.io/badge/Email-iuhj0519%40korea.ac.kr-8B0029)](mailto:iuhj0519@korea.ac.kr)
-[![Blog](https://img.shields.io/badge/Blog-Naver-03C75A)](https://blog.naver.com/iuhj0519)
+[![Blog](https://img.shields.io/badge/Blog-blog.naver.com%2Fiuhj0519-03C75A)](https://blog.naver.com/iuhj0519)
 
 | 분야 | 대표 프로젝트 |
 |---|---|
