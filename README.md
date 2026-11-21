@@ -48,6 +48,15 @@ MNIST 100개 입력의 예측 결과는 그대로 유지했고, 회귀 테스트
 
 분석해 보니 매 Batch마다 AXI 입력 로딩이 연산 앞에 그대로 더해지고 있었습니다. Input Buffer와 Global Buffer를 A/B 두 영역의 Unified Buffer로 합치고 Input Loader를 연산 제어에서 떼어내, 현재 Batch를 계산하는 동안 다음 Batch를 받도록 바꿨습니다. 100개 입력의 시뮬레이션 종료 시각은 1,844,235 ns에서 1,087,155 ns로 41.05% 줄었습니다.
 
+| 항목 | 원본 FC-MLP | 5×5 Systolic Array | 최적화 후 |
+|---|---|---|---|
+| Batch 크기 | 1 | 5 | 5 |
+| 100개 입력 시뮬레이션 종료 시각 | – | 1,844,235 ns | 1,087,155 ns (−41.05%) |
+| 이미지당 평균 cycle | 약 873.2 | 약 1,844.2 | 약 1,087.2 |
+| Batch당 cycle 구성 | – | AXI 입력 3,920 + 연산 5,301 | 첫 Batch 이후 AXI 입력을 연산과 중첩 |
+| Buffer 구조 | – | Input Buffer + Global Buffer | A/B Unified Buffer (814 depth × 5 × 2) |
+| MNIST 정확도 | 99% | 99% | 99% |
+
 `SystemVerilog` `ModelSim` `Vivado`
 
 ### [RISC-V RoCC 기반 16×16 NPU RTL](https://github.com/iuhj0519-jpg/chisel_tpu_study)
